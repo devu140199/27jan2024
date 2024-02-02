@@ -6,7 +6,9 @@
 .box2{
     width: 280px;
     height: 212px;
-    margin: 250px auto;
+    /* margin: 250px auto; */
+    display: inline-block;
+    margin:20px 10px;
     background: url('../image/1.jpg');
     background-size: cover;
     box-shadow: 0px 0px 8px 2px grey;
@@ -18,6 +20,7 @@
     height: 212px;
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
+    top: 0px;
     left: -280px;
     transition-property: all;
     transition-duration: 0.6s;
@@ -42,4 +45,155 @@
 }
 .cover .b2{
     left: 140px;
+}
+.cover1{
+    left: 0px;
+    opacity: 0;
+    transition: all 0.1s linear;
+}
+.box2:hover > .cover1{
+    opacity: 1;
+}
+.b3{
+    left: 40px !important;
+}
+.b4{
+    left: 180px !important;
+}
+.box2:hover > .cover1 .b3{
+    left: 90px !important;
+}
+.box2:hover > .cover1 .b4{
+    left: 140px !important;
+}
+.b3,.b4{
+    transition: all 0.1s linear;
+}
+.com{
+    opacity: 0;
+}
+.box2:hover > .cover1 .com{
+    opacity: 1;
+}
+.b7_1,.b7_2{
+    transform: scale(1.5,1.5);
+    transition: all 0.1s linear;
+}
+.box7:hover .b7_1,.box7:hover .b7_2{
+    transform: scale(1,1);
+}
+.b9_2{
+    transform: scale(0,0);
+    transition: all 0.2s linear;
+}
+.box9:hover .b9_2{
+    transform: scale(1,1);
+}
+.b9_1{
+    transform-origin: 80px center;
+    transform: rotateZ(0deg) scale(0,0);
+    transition: all 0.2s linear;
+}
+.box9:hover .b9_1{
+    transform: rotateZ(360deg) scale(1,1);
+}
+.b10_1{
+    transform: scale(0,0);
+    transition: all 0.2s linear;
+}
+.cover10:hover .b10_1{
+    transform: scale(1,1);
+}
+.b10_2{
+    transform-origin: -40px center;
+    transform: rotateZ(0deg) scale(0,0);
+    transition: all 0.2s linear;
+}
+.box10:hover .b10_2{
+    transform: rotateZ(360deg) scale(1,1);
+}
+.b6_1,.b6_2{
+    left: 110px !important;
+    transition: all 0.1s linear;
+}
+.cover6 .com{
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.box6:hover .b6_1{
+    left: 90px !important;
+    opacity: 1;
+}
+.box6:hover .b6_2{
+    left: 140px !important;
+    opacity: 1;
+}
+.b8_1,.b8_2{
+    transform: scale(0,0);
+    transition: all 0.1s linear;
+}
+.box8:hover .b8_1,.box8:hover .b8_2{
+    transform: scale(1,1);
+}
+.b11_1,.b11_2{
+    left: 110px !important;
+    transform: rotateZ(0deg) scale(0,0);
+    transition: all 0.2s linear;
+}
+.b11_1{
+    transform-origin: 31px center;
+}
+.b11_2{
+    transform-origin: 0px center;
+}
+.box11:hover .b11_1{
+    left: 90px !important;
+    transform: rotatez(-360deg) scale(1,1);
+}
+.box11:hover .b11_2{
+    left: 140px !important;
+    transform: rotate(-360deg) scale(1,1);
+}
+.b13_1{
+    left: -170px !important;
+    transform-origin: 150px center;
+    transition: all 0.5s linear;
+    transform: rotate(0deg);
+}
+.b13_2{
+    left: 490px !important;
+    transform-origin: -150px center;
+    transition: all 0.5s linear;
+    transform: rotate(0deg);
+}
+.box13:hover .b13_1{
+    transform: rotate(-180deg);
+}
+.box13:hover .b13_2{
+    transform: rotate(-180deg);
+}
+.b15_1{
+    left: -50px !important;
+    transition: all 0.2s linear;
+}
+.b15_2{
+    left: 330px !important;
+    transition: all 0.2s linear;
+}
+.box15:hover .b15_1{
+    left: 90px !important;
+}
+.box15:hover .b15_2{
+    left: 140px !important;
+}
+.b16_1{
+    left: 90px !important;
+    transition: all 0.2s linear;
+}
+.b16_2{
+    left: 140px !important;
+    transition: all 0.2s linear;
+}
+.box16:hover .cover16{
+    left: 90px !important;
 }
